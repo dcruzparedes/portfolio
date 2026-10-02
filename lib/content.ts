@@ -113,6 +113,7 @@ export const dict: Record<Lang, Dict> = {
     about: [
       "I'm a Computer Systems Engineering student at UNITEC in San Pedro Sula, Honduras, graduating in December 2027. I like the part of the job most people skip: making software actually run — containers, environments, deployments, pipelines.",
       "I've set up automated deployments for a community project at Corporación MIDAS, built a full-stack platform for a solar energy company, and led a 4-person team as Product Owner and Scrum Master. I also maintain and build web applications for my university department.",
+      "My favorite work is what a small business runs on every day. For a tailoring workshop I shipped a catalog site and admin panel where the owner publishes her own services and photos, prices read «Consultar» until she decides otherwise, and every order closes on WhatsApp — no cart, no payment commissions, and she can add a product without calling me.",
       "I work in English and Spanish. If you have a small, well-scoped project — a site, an MVP, a deployment, a stubborn bug — I'd like to hear about it.",
     ],
     contact: {
@@ -133,6 +134,34 @@ export const dict: Record<Lang, Dict> = {
     projects: [
       {
         index: "01",
+        title: "Catalog site and admin panel for a tailoring workshop",
+        meta: "Liliana's Taller de Costura · Full-stack · 2026",
+        points: [
+          "Built a Spanish-language catalog site for a tailoring workshop - services and products with photos, price shown on request, and a detail page per item.",
+          "Gave the owner an admin panel on Supabase Auth and row-level security, so she manages products, services, categories and photos herself.",
+          "Images are resized to 1600px and converted to WebP in the browser before upload.",
+          "Orders close over WhatsApp with a prefilled message instead of a cart, which keeps payment commissions out of the business model. Deployed to Cloudflare Workers via OpenNext. In-page payment is planned for a future release.",
+        ],
+        tags: [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Supabase",
+          "PostgreSQL",
+          "Cloudflare Workers",
+        ],
+        href: "https://lilianas-taller-de-costura.lilianastallerdecostura.workers.dev/",
+        media: {
+          kind: "video",
+          provider: "youtube",
+          id: "gvd6xPNgGqE",
+          title: "Liliana's Taller de Costura walkthrough",
+          caption:
+            "Walkthrough of the public site and the admin panel — catalog, product detail, and the WhatsApp order flow.",
+        },
+      },
+      {
+        index: "02",
         title: "Zero-touch deployments for an 8-service stack",
         meta: "Corporación MIDAS · DevOps / CI-CD · 2026",
         points: [
@@ -163,7 +192,7 @@ export const dict: Record<Lang, Dict> = {
         // },
       },
       {
-        index: "02",
+        index: "03",
         title: "Corporate website and admin CMS for a solar energy company",
         meta: "Full-stack · Product Owner · Scrum Master · 2026",
         points: [
@@ -182,7 +211,7 @@ export const dict: Record<Lang, Dict> = {
         },
       },
       {
-        index: "03",
+        index: "04",
         title: "ExTra — an Android expense tracker",
         meta: "Personal project · 2026 — present",
         points: [
@@ -203,7 +232,7 @@ export const dict: Record<Lang, Dict> = {
         },
       },
       {
-        index: "04",
+        index: "05",
         title: "Patient and logistics platform for a nonprofit",
         meta: "Casa David · React · 2024",
         points: [
@@ -221,7 +250,7 @@ export const dict: Record<Lang, Dict> = {
     status: "Disponible para trabajar",
     role: "Desarrollador full-stack",
     location: "San Pedro Sula, Honduras",
-    headline: "Construyo aplicaciones web — y los pipelines que las despliegan.",
+    headline: "Construyo aplicaciones web - y los pipelines que las despliegan.",
     lede: "Trabajo con Next.js, NestJS, PostgreSQL y Supabase en el lado de la aplicación, y con Docker, GitHub Actions y CI/CD en el lado del despliegue. Disponible para proyectos pequeños y bien definidos.",
     actions: {
       email: "Escríbeme",
@@ -269,8 +298,9 @@ export const dict: Record<Lang, Dict> = {
       },
     ],
     about: [
-      "Soy estudiante de Ingeniería en Sistemas en UNITEC, en San Pedro Sula, Honduras, con graduación prevista para diciembre de 2027. Me gusta la parte que muchos evitan: hacer que el software realmente funcione — contenedores, entornos, despliegues, pipelines.",
+      "Soy estudiante de Ingeniería en Sistemas en UNITEC, en San Pedro Sula, Honduras, con graduación prevista para diciembre de 2027. Me gusta la parte que muchos evitan: hacer que el software realmente funcione - contenedores, entornos, despliegues, pipelines.",
       "Configuré despliegues automáticos para un proyecto comunitario en Corporación MIDAS, construí una plataforma full-stack para una empresa de energía solar, y lideré un equipo de 4 personas como Product Owner y Scrum Master. También mantengo y desarrollo aplicaciones web para el departamento de mi universidad.",
+      "Mi trabajo favorito es el que una pyme usa todos los días. Para un taller de costura entregué un sitio de catálogo con panel de administración donde la dueña publica sus propios servicios y fotos, los precios dicen «Consultar» hasta que ella decida otra cosa, y cada pedido se cierra por WhatsApp — sin carrito, sin comisiones de pago, y sin llamarme para agregar un producto.",
       "Trabajo en español e inglés. Si tienes un proyecto pequeño y bien definido — un sitio, un MVP, un despliegue, un bug terco — me gustaría escucharlo.",
     ],
     contact: {
@@ -291,6 +321,34 @@ export const dict: Record<Lang, Dict> = {
     projects: [
       {
         index: "01",
+        title: "Sitio de catálogo y panel de administración para un taller de costura",
+        meta: "Liliana's Taller de Costura · Full-stack · 2026",
+        points: [
+          "Construí un sitio de catálogo en español para un taller de costura: servicios y productos con fotos, precio, y una página de detalle por cada elemento.",
+          "Le entregué a la dueña un panel de administración sobre Supabase Auth y políticas RLS, para que gestione ella misma los productos, servicios, categorías y fotos.",
+          "Las imágenes se redimensionan a 1600 px y se convierten a WebP en el navegador antes de subirlas.",
+          "Los pedidos se cierran por WhatsApp con un mensaje prellenado en vez de un carrito, así el negocio no paga comisiones. Desplegado en Cloudflare Workers con OpenNext. El pago dentro de la página está planeado para una futura versión.",
+        ],
+        tags: [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Supabase",
+          "PostgreSQL",
+          "Cloudflare Workers",
+        ],
+        href: "https://lilianas-taller-de-costura.lilianastallerdecostura.workers.dev/",
+        media: {
+          kind: "video",
+          provider: "youtube",
+          id: "gvd6xPNgGqE",
+          title: "Recorrido por Liliana's Taller de Costura",
+          caption:
+            "Recorrido por el sitio público y el panel de administración — catálogo, detalle de producto y el flujo de pedido por WhatsApp.",
+        },
+      },
+      {
+        index: "02",
         title: "Despliegues sin intervención para un stack de 8 servicios",
         meta: "Corporación MIDAS · DevOps / CI-CD · 2026",
         points: [
@@ -303,7 +361,7 @@ export const dict: Record<Lang, Dict> = {
         href: "https://github.com/dcruzparedes/midas_app",
       },
       {
-        index: "02",
+        index: "03",
         title:
           "Sitio corporativo y panel de administración para una empresa de energía solar",
         meta: "Full-stack · Product Owner · Scrum Master · 2026",
@@ -323,7 +381,7 @@ export const dict: Record<Lang, Dict> = {
         },
       },
       {
-        index: "03",
+        index: "04",
         title: "ExTra — una app Android para controlar gastos",
         meta: "Proyecto personal · 2026 — presente",
         points: [
@@ -344,7 +402,7 @@ export const dict: Record<Lang, Dict> = {
         },
       },
       {
-        index: "04",
+        index: "05",
         title: "Plataforma de pacientes y logística para una ONG",
         meta: "Casa David · React · 2024",
         points: [

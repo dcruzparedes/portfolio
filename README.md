@@ -18,7 +18,7 @@ languages under `dict.en` and `dict.es`:
 
 - `shared` — name, email, GitHub (used by both languages)
 - `dict.en` / `dict.es` — headline, lede, button labels, section titles,
-  toolkit, About paragraphs, and the four projects
+  toolkit, About paragraphs, and the projects
 - `cvHref` — path to the CV PDF for that language (files live in `public/`)
 
 To add a project link, add `href: "https://..."` to any project object.
